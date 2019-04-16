@@ -17,11 +17,14 @@ class AddToDo extends React.Component {
     }
 
     add = () => {
-        this.props.todoStore.add(this.state.inputValue);
-        this.setState({
-            inputValue: '',
-        })
+        if (this.state.inputValue !== "") {
+            this.props.todoStore.add(this.state.inputValue);
+            this.setState({
+                inputValue: '',
+            })
+        }
     }
+
     render() {
         return(
             <div>
