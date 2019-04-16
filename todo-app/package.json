@@ -117,5 +117,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "mobx-react-devtools": "^6.1.1"
   }
 }
